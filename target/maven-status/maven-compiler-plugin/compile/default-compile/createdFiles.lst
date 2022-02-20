@@ -1,0 +1,6 @@
+org\openjfx\javamessenger\MainController.class
+module-info.class
+org\openjfx\javamessenger\SecondaryController.class
+org\openjfx\javamessenger\PrimaryController.class
+org\openjfx\javamessenger\SignupController.class
+org\openjfx\javamessenger\App.class
