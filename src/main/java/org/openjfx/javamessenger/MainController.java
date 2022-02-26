@@ -12,6 +12,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.ListView;
 
 /**
  * FXML Controller class
@@ -22,6 +23,8 @@ public class MainController implements Initializable {
 
     @FXML
     private Button goBack;
+    @FXML
+    private ListView chatList;
 
     /**
      * Initializes the controller class.
@@ -29,6 +32,7 @@ public class MainController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+        //chatList.getItems().add(name);
     }    
 
     @FXML
