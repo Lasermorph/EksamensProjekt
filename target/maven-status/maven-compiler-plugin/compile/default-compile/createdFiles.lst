@@ -1,5 +1,9 @@
-org/openjfx/javamessenger/SecondaryController.class
-org/openjfx/javamessenger/PrimaryController.class
+org\openjfx\javamessenger\MainController.class
+org\openjfx\javamessenger\MainJFrame.class
+org\openjfx\javamessenger\SecondaryController.class
+org\openjfx\javamessenger\MainJFrame$1.class
+org\openjfx\javamessenger\App.class
+org\openjfx\javamessenger\MainJFrame$2.class
 module-info.class
-org/openjfx/javamessenger/MainController.class
-org/openjfx/javamessenger/SignupController.class
+org\openjfx\javamessenger\PrimaryController.class
+org\openjfx\javamessenger\SignupController.class
