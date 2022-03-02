@@ -7,4 +7,5 @@ module org.openjfx.javamessenger {
 
     opens org.openjfx.javamessenger to javafx.fxml;
     exports org.openjfx.javamessenger;
+    requires com.fazecast.jSerialComm;
 }
