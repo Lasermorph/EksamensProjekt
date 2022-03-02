@@ -7,6 +7,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import javafx.stage.WindowEvent;
 
 /**
  * JavaFX App
@@ -14,10 +15,23 @@ import java.io.IOException;
 public class App extends Application {
 
     private static Scene scene;
+    public static Stage __stage;
 
     @Override
     public void start(Stage stage) throws IOException {
         scene = new Scene(loadFXML("primary"), 600, 400);
+        __stage = stage;
+        __stage.addEventFilter(WindowEvent.WINDOW_CLOSE_REQUEST, eh -> {
+        if (SerialHandler.INSTANCE != null)
+        {
+            if (SerialHandler.INSTANCE.__ReadThread != null)
+            {
+                SerialHandler.INSTANCE.__p.closePort();
+                SerialHandler.INSTANCE.__ReadThread.stop();
+            }
+        }
+        
+        });
         stage.setScene(scene);
         stage.show();
     }
