@@ -61,12 +61,12 @@ public class PrimaryController implements Initializable {
     
     @FXML
     private void switchToMain(ActionEvent event) throws IOException {
-        //App.setRoot("main");
+        App.setRoot("main");
     }
 
     @FXML
     private void switchToSignup(MouseEvent event) throws IOException {
-        //App.setRoot("signup");
+        App.setRoot("signup");
     }
 
 }
